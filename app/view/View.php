@@ -1,19 +1,16 @@
 <?php
 
-Class View{
+Class View extends BaseView{
 
     public function  __construct(){
-
-        require( ROOT_DIR . 'plugins' . DIRECTORY_SEPARATOR . 'Smarty' . DIRECTORY_SEPARATOR . 'libs' . DIRECTORY_SEPARATOR . 'Smarty.php');
-        $this->tpl = new Smarty();
-
+    	parent::__construct();
     }
 
-    public function set_content($content=array(),$templateName = null){
-        
-        $this->tpl->assign('content', $content);
+    public function set_content($content=array(),$templateName = NULL){
+        $this->tpl->assign('content', $content, TRUE);
+        $this->tpl->assign('main_nav', $content['main_nav'], TRUE);
+        $this->tpl->assign('session', $_SESSION, TRUE);
         return $this->tpl->display(ROOT_DIR . 'public/themes/default/'.$templateName);
-
     }
  
  

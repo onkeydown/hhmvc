@@ -1,41 +1,18 @@
 <?php
 //namespace hhmvc\app\Record
-
+// instances record runtime
 final class Record{
- 
-    /**
-     * Maintains collection of instantiated classes
-     */
+
     private static $instances = array();
-    
-    /**
-     * Overload constructor
-     */
+
     private function __construct(){}
-    
-    /**
-     * Manages instantiation of classes
-     * 
-     * @param $class
-     * 
-     * @return self instance of the class
-     */
+
     public static function instance($class)
     {        
-        //instantiate class as necessary
         self::create($class);    
-        
-        //return instance
         return self::$instances[$class];
     }
-    
-    /**
-     * Creates the instances
-     * 
-     * @param $class
-     * 
-     * @return none
-     */
+
     private static function create($class)
     {
         //check if an instance of requested class exists
@@ -46,46 +23,18 @@ final class Record{
     }
 }
 
-
+// __set __get runtime-record
 // Class Record {
 
-//  /*
-//  * @the vars array
-//  * @access private
-//  */
-//  private $vars = array();
+//      private $vars = array();
 
-
-//  /**
-//  *
-//  * @set undefined vars
-//  *
-//  * @param string $index
-//  *
-//  * @param mixed $value
-//  *
-//  * @return void
-//  *
-//  */
-//  public function __set($index, $value)
-//  {
-// 	$this->vars[$index] = $value;
-//  }
-
-//  /**
-//  *
-//  * @get variables
-//  *
-//  * @param mixed $index
-//  *
-//  * @return mixed
-//  *
-//  */
-//  public function __get($index)
-//  {
-// 	return $this->vars[$index];
-//  }
+//      public function __set($index, $value)
+//      {
+//       	$this->vars[$index] = $value;
+//      }
+//      public function __get($index)
+//      {
+//     	    return $this->vars[$index];
+//      }
 
 // }
-
-?>
