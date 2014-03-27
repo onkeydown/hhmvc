@@ -2,10 +2,15 @@
 
 //namespace hhmvc\app\model\BaseModel;
 
-Class BaseView{
+Abstract Class BaseView{
 
-public function __construct(){}
+	protected $tpl;
 
-Abstract function Content();
+	public function __construct(){
+		require( ROOT_DIR . 'plugins' . DIRECTORY_SEPARATOR . 'Smarty' . DIRECTORY_SEPARATOR . 'libs' . DIRECTORY_SEPARATOR . 'Smarty.php');
+	    $this->tpl = Record::instance('Smarty');
+	}
+
+	Abstract function set_content();
  
 }

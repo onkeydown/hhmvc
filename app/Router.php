@@ -57,13 +57,7 @@ class Router {
 		$httpAccept = explode(',' , $_SERVER['HTTP_ACCEPT']);
 		$this->contentType = $httpAccept;
 	}
-
-	public function setConfig($filename){
-		$config_values = parse_ini_file($filename, TRUE);
-		$this->config = $config_values;
-	}
-
- 
+	
 }
 
 ?>
