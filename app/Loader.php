@@ -145,7 +145,7 @@ class Loader{
             return true;
         }
         else{
-            header("Location: /",TRUE,301);
+         //   header("Location: /",TRUE,301);
         }
     }
 

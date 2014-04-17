@@ -279,8 +279,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      * @var boolean
      */
     public $compile_check = true;
-    /**
-     * use sub dirs for compiled/cached files?
+    /**de* use sub dirs for compiled/cached files?
      * @var boolean
      */
     public $use_sub_dirs = false;
@@ -410,6 +409,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      * @var string
      */
     public $debug_tpl = null;
+    // ROOT_DIR . DIRECTORY_SEPARATOR . 'plugins' . DIRECTORY_SEPARATOR .'Smarty'. DIRECTORY_SEPARATOR  . 'libs' . DIRECTORY_SEPARATOR;
     /**
      * When set, smarty uses this value as error_reporting-level.
      * @var int
