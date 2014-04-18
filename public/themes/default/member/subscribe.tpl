@@ -32,15 +32,15 @@
 
 	        <div class="form-group">
 				<label for="username">Username</label>
-	        <input name="username" class="form-control" id="username" type="text" placeholder="username">
+	        <input name="username" class="form-control" id="username" type="text" placeholder="username" required>
 	        </div>
 	        <div class="form-group">
 				<label for="email">Email</label>
-	        <input name="email" class="form-control" id="email" type="email" placeholder="Email">
+	        <input name="email" class="form-control" id="email" type="email" placeholder="Email" required>
 	        </div>
 	  		 <div class="form-group">
 				<label for="password">Password</label>
-	        <input name="pwd" class="form-control" id="password" type="password" placeholder="Password">
+	        <input name="pwd" class="form-control" id="password" type="password" placeholder="Password" required>
 	        </div>
 		
 		</fieldset>

@@ -123,8 +123,8 @@ function smarty_function_html_image($params, $template)
         if (!$_image_data = @getimagesize($_image_path)) {
             if (!file_exists($_image_path)) {
                 trigger_error("html_image: unable to find '$_image_path'", E_USER_NOTICE);
-
                 return;
+
             } elseif (!is_readable($_image_path)) {
                 trigger_error("html_image: unable to read '$_image_path'", E_USER_NOTICE);
 

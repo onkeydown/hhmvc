@@ -2,7 +2,7 @@
 <!--// wysiwyg Editor / summernote-->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
 
-{if $session['USER']['role'] > 0}
+{if $smarty.session['USER']['role'] > 0}
 
 	<!--// Hightlight Code / CodeMirror-->
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.js"></script>

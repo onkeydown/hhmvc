@@ -1,5 +1,4 @@
 {extends file="../index.tpl"}
-
 {block name="header_002"}
 <section class="featured postview">
 <div class="container-fluid">
@@ -15,7 +14,6 @@
 </div>
 </section>
 {/block}
-
 
 {block name="content_001"}
 	<section class="postview wrapper">
@@ -37,11 +35,6 @@
 	</section>
 {/block}
 
-{block name="content_002"}    
-{/block}
+{block name="content_002"}{/block}
 
-{block name="content_003"}
-{/block}
-
-{block name="footer"}
-{/block}
+{block name="content_003"}{/block}

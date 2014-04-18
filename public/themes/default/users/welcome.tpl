@@ -20,9 +20,10 @@
 <div class="row">
 <div class="col-md-6 col-md-offset-3 panel">
 <div class="align-center">
-    <h4>
+    <h2>
     <i class="fa fa-quote-left"></i> {$content['content']['info_msg']}
-    </h4>
+    </h2>
+    <div class="avatar img-circle"><i class="fa fa-user"></i></div>
     <p>
     	{$smarty.session.USER.headline_h2} |
 		user: {$smarty.session.USER.user_name} (role: {$smarty.session.USER.role})<br/>

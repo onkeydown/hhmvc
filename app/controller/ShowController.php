@@ -20,7 +20,7 @@ class ShowController extends BaseController{
 
         if( $action == "efforts"){
 
-		    	$this->tools->setSession(array('action' => $action));
+		    	//$this->tools->setSession(array('action' => $action));
                 $cols = "id, artikel_id, parent_id, subnavi, html, categories, excerpt, rating, footer, sidebar, keywords, init_date, edit_date, link_url, status, user_id ";
                 $query = 'select '.$cols.' from hhmvc.cms where hhmvc.cms.status = "1" AND hhmvc.cms.link_id = "'.$action.'" order by id desc';
                 $this->model->connect($this->config['DB']['host'], $this->config['DB']['user'], $this->config['DB']['password'], $this->config['DB']['name']);               

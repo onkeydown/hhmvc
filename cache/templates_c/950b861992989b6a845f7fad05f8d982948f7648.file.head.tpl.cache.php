@@ -1,30 +1,29 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-04-17 23:23:49
+<?php /* Smarty version Smarty-3.1.17, created on 2014-04-18 11:24:42
          compiled from "S:\xampp\htdocs\hhmvc\public\themes\default\basic\head.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2299553506285a24e70-08733904%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3243353510b7a38bf21-14461683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '950b861992989b6a845f7fad05f8d982948f7648' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\head.tpl',
-      1 => 1396931251,
+      1 => 1397819699,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2299553506285a24e70-08733904',
+  'nocache_hash' => '3243353510b7a38bf21-14461683',
   'function' => 
   array (
   ),
   'variables' => 
   array (
     'head' => 0,
-    'session' => 0,
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53506285ab9590_29475078',
+  'unifunc' => 'content_53510b7a3a74b4_35619975',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53506285ab9590_29475078')) {function content_53506285ab9590_29475078($_smarty_tpl) {?><head>
+<?php if ($_valid && !is_callable('content_53510b7a3a74b4_35619975')) {function content_53510b7a3a74b4_35619975($_smarty_tpl) {?><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php echo $_smarty_tpl->tpl_vars['head']->value['head']['description'];?>
@@ -43,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link rel="stylesheet" href="/css/purecss.css">
     <link rel="stylesheet" href="/css/main-grid.css">
     <link rel="stylesheet" href="/css/layouts/marketing.css"> -->
-    <?php if ($_smarty_tpl->tpl_vars['session']->value['USER']['role']>0) {?>
+    <?php if ($_SESSION['USER']['role']>0) {?>
 
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css" />

@@ -63,7 +63,7 @@ var rs = {
         var scope   = $('#' + obj.tid);
         rs.config.PostData.id = '#' + obj.tid;
         rs.config.PostData.id_data = '#' + obj.tid +'_data';
-        console.log(rs.config.PostData.id_data);
+        // console.log(rs.config.PostData.id_data);
         rs.config.PostData.Numid = scope.data('id');
         rs.config.PostData.CharId = $(this).attr('id');
         rs.initLink( scope, $(this), rs.config.PostData.aid );
@@ -71,7 +71,7 @@ var rs = {
     
     initLink: function( scope, that, task ) {
         rs.config.dbAction = task;
-        if(task == 'online' || task == 'save'){
+        if(task == 'online' || task == 'save' || task == 'delete' || task == 'deletec'){
             rs.config.dbAction = task;
             rs.initAjax( rs.mergeObj(rs.getElementContentFields( rs.config.PostData.id_data )) );
         }else if(task == 'skip'){
@@ -85,10 +85,12 @@ var rs = {
  
     initAjax: function( obj, config ) {
  
-        if(rs.config.dbAction == "save") obj['Html'] = $('.note-editable', $('#pid_'+rs.config.PostData.id)).html();
+        if(rs.config.dbAction == "save"){
+            obj['Html'] = $('.note-editable', $('#pid_'+rs.config.PostData.id)).html();
+            if( obj['Html'].length < 50 ) return false;
+        }
+        //console.log(obj, config);
         
-        
- 
         $.ajax({
             url: obj.url,
             type: "POST",
@@ -152,6 +154,8 @@ var rs = {
         obj = rs.mergeObj(obj2);
         obj.NumId = rs.config.PostData.Numid
         obj.url = rs.config.dbAction == "new" ? "/json/new" : "/json/save";
+        console.log('length', obj2['Html'].length, 'content', obj2['Html']);
+        if(obj['Html'].length < 50) return false;
         rs.initAjax(obj);
     },
     mergeObj: function(obj){

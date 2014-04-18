@@ -1,39 +1,42 @@
-<?php /*%%SmartyHeaderCode:3354535062b38e70a0-99767683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:652153510b79e26b95-21633234%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'bb73ae57f864a6206122b1d83c5571b3a78b02d1' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\cms\\efforts.tpl',
-      1 => 1397012759,
+      1 => 1397821291,
       2 => 'file',
     ),
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397774988,
+      1 => 1397819887,
       2 => 'file',
     ),
     '09e46a491c65935b60719dbb38c9b7f20f259c91' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\cms\\tpl\\cms_navi.tpl',
-      1 => 1397016880,
+      1 => 1397781514,
       2 => 'file',
     ),
     '950b861992989b6a845f7fad05f8d982948f7648' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\head.tpl',
-      1 => 1396931251,
+      1 => 1397819699,
       2 => 'file',
     ),
     '159dc58c497ecaee04b7a662fd77777e382c70fe' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\script.tpl',
-      1 => 1396909498,
+      1 => 1397819748,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3354535062b38e70a0-99767683',
+  'nocache_hash' => '652153510b79e26b95-21633234',
+  'cache_lifetime' => 3600,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_53510f6ea0f8e2_62826993',
   'variables' => 
   array (
     'value' => 0,
@@ -41,11 +44,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'content' => 1,
   ),
   'has_nocache_code' => true,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_535062b3ebb4f0_59484090',
-  'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_535062b3ebb4f0_59484090')) {function content_535062b3ebb4f0_59484090($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_53510f6ea0f8e2_62826993')) {function content_53510f6ea0f8e2_62826993($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -63,6 +63,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <link rel="stylesheet" href="/css/purecss.css">
     <link rel="stylesheet" href="/css/main-grid.css">
     <link rel="stylesheet" href="/css/layouts/marketing.css"> -->
+    
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css" />
+
+        <link rel="stylesheet" href="/css/summernote.css">
+        
         <!-- custom styles -->
     <link rel="stylesheet" href="/css/custom.css">
 
@@ -83,7 +89,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">	                                        <li><a href="/member/profil">Profil</a></li>
+            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                                                <li><a href="/member/profil">Profil</a></li>
                                     <li><a href="/users/logout">Logout</a></li>
                                     <li><a href="/cms/efforts">Efforts</a></li>
                                     <li><a href="/cms/blog">Blog</a></li>
@@ -103,7 +110,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="row">
 <div class="col-md-4 col-md-offset-4">
 <div class="align-center">
-    <h4>
+    <h4 class="pTitle">
         CRUD for efforts
     </h4>
 </div>
@@ -120,16 +127,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="row">
 <div class="col-md-12">
         <div class="content">
-        <div class="articles excerpt" id="new-article" data-id="new">
-
-        <?php  $_smarty_tpl->tpl_vars['articles'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['articles']->_loop = false;
+        <div class="articles excerpt" 
+             id="new-article" 
+             data-id="new"></div>
+            <?php  $_smarty_tpl->tpl_vars['articles'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['articles']->_loop = false;
  $_smarty_tpl->tpl_vars['keys'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['content']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['articles']->key => $_smarty_tpl->tpl_vars['articles']->value) {
 $_smarty_tpl->tpl_vars['articles']->_loop = true;
  $_smarty_tpl->tpl_vars['keys']->value = $_smarty_tpl->tpl_vars['articles']->key;
 ?>
-                
                 <div class="article excerpt">
                     <?php $_smarty = $_smarty_tpl->smarty; if (!is_callable('smarty_modifier_replace')) include 'S:\\xampp\\htdocs\\hhmvc\\plugins\\Smarty\\libs\\plugins\\modifier.replace.php';
 ?>    <ul id="crud-buttons active-link" 
@@ -139,7 +146,7 @@ $_smarty_tpl->tpl_vars['articles']->_loop = true;
 ">
         <?php  $_smarty_tpl->tpl_vars['controller'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['controller']->_loop = false;
  $_smarty_tpl->tpl_vars['href'] = new Smarty_Variable;
- $_from = $_smarty_tpl->tpl_vars['session']->value['crud']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+ $_from = $_SESSION['crud']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['controller']->key => $_smarty_tpl->tpl_vars['controller']->value) {
 $_smarty_tpl->tpl_vars['controller']->_loop = true;
  $_smarty_tpl->tpl_vars['href']->value = $_smarty_tpl->tpl_vars['controller']->key;
@@ -216,9 +223,7 @@ _data" data-id="tid_<?php echo $_smarty_tpl->tpl_vars['articles']->value['id'];?
         </div>
 </div>
                 </div>
-
-        <?php } ?>
-        </div>
+            <?php } ?>
         </div>
 </div>
 </div>
@@ -234,11 +239,46 @@ _data" data-id="tid_<?php echo $_smarty_tpl->tpl_vars['articles']->value['id'];?
 
 
 
+    <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Confirm action" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm content remove</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close/Decline</button>
+                    <button type="button" class="btn btn-primary">Apply delete</button>
+
+                        <a href="/cms/efforts/deletec" data-aid="deletec" data-url="/json/deletec" data-status="1" title="" data-original-title="deletec" class="ajaxReq fa fa-delete hhmvc-tooltip btn btn-default btn-sm btn-small dropdown-toggle">
+                            <span>
+                                delete
+                            </span>
+                        </a>
+                </div>       
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!--// wysiwyg Editor / summernote-->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+
+
+	<!--// Hightlight Code / CodeMirror-->
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/mode/xml/xml.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/codemirror/2.36.0/formatting.min.js"></script>
+	<script src="/js/summernote.min.js"></script>
+	<script src="/js/custom.js"></script>
+	<script src="/js/custom_admin.js"></script>
 
 
 

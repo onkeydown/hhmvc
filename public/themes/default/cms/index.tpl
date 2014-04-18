@@ -44,10 +44,12 @@
 {/block}
 
 {block name="header_002"}
+
 {/block}
 
 
 {block name="content_001"}
+
 {/block}
 
 {block name="footer"}

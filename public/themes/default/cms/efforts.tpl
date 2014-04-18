@@ -6,7 +6,7 @@
 <div class="row">
 <div class="col-md-4 col-md-offset-4">
 <div class="align-center">
-    <h4>
+    <h4 class="pTitle">
         CRUD for efforts
     </h4>
 </div>
@@ -26,16 +26,14 @@
 <div class="row">
 <div class="col-md-12">
         <div class="content">
-        <div class="articles excerpt" id="new-article" data-id="new">
-
-        {foreach $content AS $keys => $articles}
-                
+        <div class="articles excerpt" 
+             id="new-article" 
+             data-id="new"></div>
+            {foreach $content AS $keys => $articles}
                 <div class="article excerpt">
                     {include 'cms/tpl/cms_navi.tpl'}
                 </div>
-
-        {/foreach}
-        </div>
+            {/foreach}
         </div>
 </div>
 </div>

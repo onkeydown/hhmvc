@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/purecss.css">
     <link rel="stylesheet" href="/css/main-grid.css">
     <link rel="stylesheet" href="/css/layouts/marketing.css"> -->
-    {if $session['USER']['role'] > 0}
+    {if $smarty.session['USER']['role'] > 0}
 
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/codemirror.min.css" />
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/3.20.0/theme/monokai.min.css" />

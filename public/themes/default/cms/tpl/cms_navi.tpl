@@ -2,7 +2,7 @@
         class="btnWrapper iconButtons"
         data-target="txtWrapper"
         data-id="{$articles['id']}">
-        {foreach $session['crud'] AS $href => $controller}
+        {foreach $smarty.session['crud'] AS $href => $controller}
             <li>
                 <a  href="{$articles['link_url']}/{$href}"
                     id = "{strip}{$articles['artikel_id']|replace:" ":""}_{$controller|replace:'/':''}{/strip}"

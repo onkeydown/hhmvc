@@ -15,7 +15,8 @@
             <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">	    {if $smarty.session['USER']['role'] < 1}
+            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
+            {if $smarty.session['USER']['role'] == 0 || !isset($smarty.session['USER']['role'])}
                 {foreach $smarty.session['nav']['0'] AS $key => $value}
                     <li><a href="{$value}">{$key}</a></li>
                 {/foreach}
@@ -337,7 +338,32 @@
 <p class="color-white">Bootstraptaste</p>
 </div>
 </section>
+{/block}
 
+{block name="modal"}
+    <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Confirm action" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm content remove</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close/Decline</button>
+                    <button type="button" class="btn btn-primary">Apply delete</button>
+
+                        <a href="/cms/efforts/deletec" data-aid="deletec" data-url="/json/deletec" data-status="1" title="" data-original-title="deletec" class="ajaxReq fa fa-delete hhmvc-tooltip btn btn-default btn-sm btn-small dropdown-toggle">
+                            <span>
+                                delete
+                            </span>
+                        </a>
+                </div>       
+            </div>
+        </div>
+    </div>
 {/block}
 
 {block name="footer"}

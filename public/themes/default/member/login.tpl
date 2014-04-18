@@ -28,10 +28,11 @@
                     <label for="username">User</label>
             		<input 
                         type="text" 
-                        name="username" 
+                        name="username"
+                        placeholder="Username or Email ..."
                         id="username" 
                         type="text" 
-                        required="" 
+                        required
                         pattern="^[A-Za-z0-9_]{1,15}$" 
                         value="" 
                         name="names_pattern3"
@@ -47,7 +48,7 @@
                         placeholder="Password (min. 6 characters)"
                         pattern="?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         value=""
-                        required=""
+                        required
                         class="form-control">
                     </div>
                 {/literal}

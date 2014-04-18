@@ -1,45 +1,39 @@
-<?php /*%%SmartyHeaderCode:3231053506284e8da77-10767334%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:609953510b8fde16a4-92128888%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3919a84842262916bd1e88275ee2c1eef627f586' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\member\\login.tpl',
-      1 => 1396991019,
+      1 => 1397788774,
       2 => 'file',
     ),
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397774988,
+      1 => 1397819887,
       2 => 'file',
     ),
     '950b861992989b6a845f7fad05f8d982948f7648' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\head.tpl',
-      1 => 1396931251,
+      1 => 1397819699,
       2 => 'file',
     ),
     '159dc58c497ecaee04b7a662fd77777e382c70fe' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\script.tpl',
-      1 => 1396909498,
+      1 => 1397819748,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3231053506284e8da77-10767334',
-  'variables' => 
-  array (
-    'value' => 0,
-    'key' => 0,
-    'content' => 1,
-  ),
-  'has_nocache_code' => true,
+  'nocache_hash' => '609953510b8fde16a4-92128888',
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53506285c4f9f3_22714971',
+  'unifunc' => 'content_53511bafc95ca1_76349981',
+  'has_nocache_code' => true,
   'cache_lifetime' => 3600,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53506285c4f9f3_22714971')) {function content_53506285c4f9f3_22714971($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_53511bafc95ca1_76349981')) {function content_53511bafc95ca1_76349981($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -77,7 +71,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">	                                        <li><a href="/blog">Blog</a></li>
+            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
+                                                <li><a href="/blog">Blog</a></li>
                                     <li><a href="/efforts">Efforts</a></li>
                                     <li><a href="/member/subscribe">Join</a></li>
                                     <li><a href="/member/login">Login</a></li>
@@ -119,10 +114,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <label for="username">User</label>
             		<input 
                         type="text" 
-                        name="username" 
+                        name="username"
+                        placeholder="Username or Email ..."
                         id="username" 
                         type="text" 
-                        required="" 
+                        required
                         pattern="^[A-Za-z0-9_]{1,15}$" 
                         value="" 
                         name="names_pattern3"
@@ -138,7 +134,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         placeholder="Password (min. 6 characters)"
                         pattern="?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         value=""
-                        required=""
+                        required
                         class="form-control">
                     </div>
                 
@@ -154,6 +150,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 
+
+
+
+    <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Confirm action" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm content remove</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close/Decline</button>
+                    <button type="button" class="btn btn-primary">Apply delete</button>
+
+                        <a href="/cms/efforts/deletec" data-aid="deletec" data-url="/json/deletec" data-status="1" title="" data-original-title="deletec" class="ajaxReq fa fa-delete hhmvc-tooltip btn btn-default btn-sm btn-small dropdown-toggle">
+                            <span>
+                                delete
+                            </span>
+                        </a>
+                </div>       
+            </div>
+        </div>
+    </div>
 
 
 

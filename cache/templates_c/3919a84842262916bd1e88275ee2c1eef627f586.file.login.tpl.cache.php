@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-04-17 23:23:48
+<?php /* Smarty version Smarty-3.1.17, created on 2014-04-18 11:25:03
          compiled from "S:\xampp\htdocs\hhmvc\public\themes\default\member\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:3231053506284e8da77-10767334%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:609953510b8fde16a4-92128888%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3919a84842262916bd1e88275ee2c1eef627f586' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\member\\login.tpl',
-      1 => 1396991019,
+      1 => 1397788774,
       2 => 'file',
     ),
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397774988,
+      1 => 1397819887,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3231053506284e8da77-10767334',
+  'nocache_hash' => '609953510b8fde16a4-92128888',
   'function' => 
   array (
   ),
@@ -29,9 +29,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => true,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_5350628575ded2_04520798',
+  'unifunc' => 'content_53510b8ff3d178_06498459',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5350628575ded2_04520798')) {function content_5350628575ded2_04520798($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_53510b8ff3d178_06498459')) {function content_53510b8ff3d178_06498459($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <?php echo $_smarty_tpl->getSubTemplate ('basic/head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
 
@@ -49,7 +49,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
         </div>
         <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">	    <?php if ($_SESSION['USER']['role']<1) {?>
+            <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
+            <?php if ($_SESSION['USER']['role']==0||!isset($_SESSION['USER']['role'])) {?>
                 <?php  $_smarty_tpl->tpl_vars['value'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['value']->_loop = false;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_SESSION['nav']['0']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -113,10 +114,11 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
                     <label for="username">User</label>
             		<input 
                         type="text" 
-                        name="username" 
+                        name="username"
+                        placeholder="Username or Email ..."
                         id="username" 
                         type="text" 
-                        required="" 
+                        required
                         pattern="^[A-Za-z0-9_]{1,15}$" 
                         value="" 
                         name="names_pattern3"
@@ -132,7 +134,7 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
                         placeholder="Password (min. 6 characters)"
                         pattern="?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                         value=""
-                        required=""
+                        required
                         class="form-control">
                     </div>
                 
@@ -151,9 +153,35 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 
 
 
+    <div id="modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="Confirm action" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please confirm content remove</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close/Decline</button>
+                    <button type="button" class="btn btn-primary">Apply delete</button>
+
+                        <a href="/cms/efforts/deletec" data-aid="deletec" data-url="/json/deletec" data-status="1" title="" data-original-title="deletec" class="ajaxReq fa fa-delete hhmvc-tooltip btn btn-default btn-sm btn-small dropdown-toggle">
+                            <span>
+                                delete
+                            </span>
+                        </a>
+                </div>       
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="footer l-box is-center">
-            <?php echo '/*%%SmartyNocache:3231053506284e8da77-10767334%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
-/*/%%SmartyNocache:3231053506284e8da77-10767334%%*/';?>
+            <?php echo '/*%%SmartyNocache:609953510b8fde16a4-92128888%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
+/*/%%SmartyNocache:609953510b8fde16a4-92128888%%*/';?>
 
     </div>
 

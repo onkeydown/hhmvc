@@ -22,7 +22,7 @@ class CmsController extends BaseController{
 
         if($action == "efforts"){
     
-            $query = 'select * from hhmvc.cms where hhmvc.cms.id > "0" order by id desc ';
+            $query = 'select * from hhmvc.cms where hhmvc.cms.id > "0" AND hhmvc.cms.status < "3" order by id desc ';
             $this->model->connect($this->config['DB']['host'], $this->config['DB']['user'], $this->config['DB']['password'], $this->config['DB']['name']);
           
             $result  = $this->model->query($query);

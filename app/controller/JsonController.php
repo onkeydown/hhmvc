@@ -48,7 +48,7 @@ class JsonController extends BaseController{
             $post['link_url']= "/cms/efforts";
             $post['link_id']= "efforts";
             $post['artikel_id'] = "id_".time();
-
+            
             $predb  = $this->tools->validateDBFields($post, $this->sqlfield, "hhmvc.cms.");
             $set    = $this->tools->insertIntoString($predb);
             $query = 'INSERT INTO hhmvc.cms ' . $set;
@@ -110,12 +110,24 @@ class JsonController extends BaseController{
             return $this->view->set_content_JSON($request); 
         }
 
-        if($parameter['0'] = 'delete')
+        if($action == 'delete')
         {   
-            $json['status'] = 1;
-            $json['show'] = 1;
-            $json['msg'] = "";
-            return $this->view->set_content_JSON($json); 
+            $data['status'] = 1;
+            $data['show'] = 1; 
+            $data['status'] = 1;
+            $data['msg'] = "content removed!";
+            $data['callback'] = "location.reload(true)";
+            
+            $query =   "UPDATE hhmvc.cms
+                        SET status=9 
+                        WHERE id=".$cmsId;
+            
+            $data['q'] = $query;
+            $this->model->connect($this->config['DB']['host'], $this->config['DB']['user'], $this->config['DB']['password'], $this->config['DB']['name']);               
+            $result    =   $this->model->query($query);
+            $this->model->close();
+
+            return $this->view->set_content_JSON($data); 
         }
 
         if(!is_array($content)){
