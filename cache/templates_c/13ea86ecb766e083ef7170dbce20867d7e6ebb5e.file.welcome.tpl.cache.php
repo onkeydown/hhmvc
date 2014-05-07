@@ -1,26 +1,29 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-04-18 11:27:08
+<?php /* Smarty version Smarty-3.1.17, created on 2014-04-20 00:27:27
          compiled from "S:\xampp\htdocs\hhmvc\public\themes\default\users\welcome.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:722853510c0c108c06-31007106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:94915351567f9cb649-20727964%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '13ea86ecb766e083ef7170dbce20867d7e6ebb5e' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\users\\welcome.tpl',
-      1 => 1397815889,
+      1 => 1397951181,
       2 => 'file',
     ),
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397819887,
+      1 => 1397946424,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '722853510c0c108c06-31007106',
+  'nocache_hash' => '94915351567f9cb649-20727964',
   'function' => 
   array (
   ),
+  'cache_lifetime' => 3600,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5351567fb42697_93472033',
   'variables' => 
   array (
     'value' => 0,
@@ -28,10 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'content' => 1,
   ),
   'has_nocache_code' => true,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53510c0c268552_50266040',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53510c0c268552_50266040')) {function content_53510c0c268552_50266040($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5351567fb42697_93472033')) {function content_5351567fb42697_93472033($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <?php echo $_smarty_tpl->getSubTemplate ('basic/head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
 
@@ -46,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
@@ -90,9 +91,9 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
 <div class="align-center">
-    <h2><?php echo '/*%%SmartyNocache:722853510c0c108c06-31007106%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'headline_h2\'];?>
-/*/%%SmartyNocache:722853510c0c108c06-31007106%%*/';?>
-</h2>
+    <h5><?php echo '/*%%SmartyNocache:94915351567f9cb649-20727964%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'headline_h2\'];?>
+/*/%%SmartyNocache:94915351567f9cb649-20727964%%*/';?>
+</h5>
 </div>
 </div>
 </div>
@@ -107,32 +108,34 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 <div class="col-md-6 col-md-offset-3 panel">
 <div class="align-center">
     <h2>
-    <i class="fa fa-quote-left"></i> <?php echo '/*%%SmartyNocache:722853510c0c108c06-31007106%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'info_msg\'];?>
-/*/%%SmartyNocache:722853510c0c108c06-31007106%%*/';?>
+    	<?php echo '/*%%SmartyNocache:94915351567f9cb649-20727964%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'welcome_msg\'];?>
+/*/%%SmartyNocache:94915351567f9cb649-20727964%%*/';?>
 
     </h2>
-    <div class="avatar img-circle"><i class="fa fa-user"></i></div>
-    <p>
-    	<?php echo $_SESSION['USER']['headline_h2'];?>
- |
-		user: <?php echo $_SESSION['USER']['user_name'];?>
- (role: <?php echo $_SESSION['USER']['role'];?>
-)<br/>
-		last visit: <?php echo $_SESSION['USER']['lastseen'];?>
- |
-		e-mail: <?php echo $_SESSION['USER']['user_email'];?>
- - 
-		
-		<a href="/user/profile">edit Profile</a>
+    <h5>
+       <span class="userName">
+       		<i class="fa fa-desktop">&nbsp;</i><?php echo '/*%%SmartyNocache:94915351567f9cb649-20727964%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'user_name\'];?>
+/*/%%SmartyNocache:94915351567f9cb649-20727964%%*/';?>
 
+       		<em>logged in as: <span>editor</span> / e-mail: <span><?php echo $_SESSION['USER']['user_email'];?>
+</span> &ndash;</em>
+       </span>
+     <!--    <a href="/user/profile" class="btn btn-primary"><i class="fa fa-edit" style="font-size:14px"></i> Profile</a> -->
+    </h5>
+    <div class="avatar img-circle" data-toggle="tooltip" data-placement="top" title="click to upload Avator or drop avatar here"><i class="fa fa-user"></i></div>
+    <p>
+       <time class="timeTag" itemprop="dateCreated" datetime="<?php echo $_SESSION['USER']['lastseen'];?>
+"> last login: <?php echo $_SESSION['USER']['lastseen'];?>
+</time>
 	</p>
-    <div class="subslogan">
-        <h5><?php echo '/*%%SmartyNocache:722853510c0c108c06-31007106%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'splash_msg\'];?>
-/*/%%SmartyNocache:722853510c0c108c06-31007106%%*/';?>
-</h5>
-	    <a href="#" class="btn btn-primary hhmvc-Button">
-	  		<i class="fa fa-thumbs-up"></i> Submit
+    <div class="subslogan btn-group">
+        <h6><?php echo '/*%%SmartyNocache:94915351567f9cb649-20727964%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'content\'][\'splash_msg\'];?>
+/*/%%SmartyNocache:94915351567f9cb649-20727964%%*/';?>
+</h6>
+	    <a href="#" class="btn btn-default hhmvc-Button">
+	  		<i class="fa fa-thumbs-up"></i> Add Content
 	    </a>
+	    <a href="/user/profile" class="btn btn-default hhmvc-Button"><i class="fa fa-edit" style="font-size:14px"></i> Adjust Profile</a>
     </div>
 </div>
 </div>
@@ -177,8 +180,8 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 
 
     <div class="footer l-box is-center">
-            <?php echo '/*%%SmartyNocache:722853510c0c108c06-31007106%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
-/*/%%SmartyNocache:722853510c0c108c06-31007106%%*/';?>
+            <?php echo '/*%%SmartyNocache:94915351567f9cb649-20727964%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
+/*/%%SmartyNocache:94915351567f9cb649-20727964%%*/';?>
 
     </div>
 

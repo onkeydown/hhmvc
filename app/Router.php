@@ -14,7 +14,7 @@ class Router{
 
 	
 	function __construct() {
-	    $this->getController();
+	    self::getController();
 	}
 
 	private function getController() {
@@ -22,6 +22,7 @@ class Router{
 		$this->reroute = array("efforts"	=> "show/efforts",
 								"blog" 		=> "show/blog",
 								"cv" 		=> "show/cv");
+
 		$route = isset($this->reroute[strtolower($_GET['url'])]) ? $this->reroute[strtolower($_GET['url'])] : strtolower($_GET['url']);
 
 		if (empty($route))
@@ -31,12 +32,12 @@ class Router{
 		else
 		{
 		
-			$parts = explode('/', $route);
+			$parts = explode('/', $this->charFilter($route));
 			$this->controller = ucfirst($parts[0]).'Controller';
 		
 			if(isset($parts[1]))
 			{
-				$this->action = ucfirst($parts[1]);
+				$this->action = strtolower(trim($parts[1]));
 			}
 		}
 
@@ -47,7 +48,7 @@ class Router{
 
 		if(empty($this->action))
 		{
-			$this->action = 'Index';
+			$this->action = 'index';
 		}
 
 		if(isset($parts[2]))
@@ -56,6 +57,13 @@ class Router{
 			$this->params = array_values($parts);
 		}
 		unset($parts);
+	}
+
+	public function charFilter($str, $opt = null)
+	{
+	
+		$regEx = isset($opt) ? $opt : '/[^a-zA-Z0-9\/\_.]/i';		
+		return $string = preg_replace($regEx, '', $str);
 	}
 }
 

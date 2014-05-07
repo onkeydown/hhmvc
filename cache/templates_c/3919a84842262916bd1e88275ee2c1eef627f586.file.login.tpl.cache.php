@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.17, created on 2014-04-18 11:25:03
+<?php /* Smarty version Smarty-3.1.17, created on 2014-04-20 00:27:20
          compiled from "S:\xampp\htdocs\hhmvc\public\themes\default\member\login.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:609953510b8fde16a4-92128888%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3090453515def29ef89-43153145%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -13,14 +13,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397819887,
+      1 => 1397946424,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '609953510b8fde16a4-92128888',
+  'nocache_hash' => '3090453515def29ef89-43153145',
   'function' => 
   array (
   ),
+  'cache_lifetime' => 3600,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_53515def41dcd4_57576416',
   'variables' => 
   array (
     'value' => 0,
@@ -28,10 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'content' => 1,
   ),
   'has_nocache_code' => true,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53510b8ff3d178_06498459',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53510b8ff3d178_06498459')) {function content_53510b8ff3d178_06498459($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_53515def41dcd4_57576416')) {function content_53515def41dcd4_57576416($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <?php echo $_smarty_tpl->getSubTemplate ('basic/head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array(), 0);?>
 
@@ -46,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
@@ -180,8 +181,8 @@ $_smarty_tpl->tpl_vars['value']->_loop = true;
 
 
     <div class="footer l-box is-center">
-            <?php echo '/*%%SmartyNocache:609953510b8fde16a4-92128888%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
-/*/%%SmartyNocache:609953510b8fde16a4-92128888%%*/';?>
+            <?php echo '/*%%SmartyNocache:3090453515def29ef89-43153145%%*/<?php echo $_smarty_tpl->tpl_vars[\'content\']->value[\'footer\'][\'nav\'];?>
+/*/%%SmartyNocache:3090453515def29ef89-43153145%%*/';?>
 
     </div>
 

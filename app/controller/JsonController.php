@@ -13,8 +13,7 @@ class JsonController extends BaseController{
     }
 
     public function action($action = "index", $parameter = false)
-    {
- 
+    { 
         $this->tools->isProtected();
         $action = strtolower(trim($action));
         $this->control = 'json';
@@ -115,19 +114,19 @@ class JsonController extends BaseController{
             $data['status'] = 1;
             $data['show'] = 1; 
             $data['status'] = 1;
-            $data['msg'] = "content removed!";
-            $data['callback'] = "location.reload(true)";
+            $data['msg'] = "content removed";
+            $data['callback'] = "location.reload(true);";
             
             $query =   "UPDATE hhmvc.cms
                         SET status=9 
                         WHERE id=".$cmsId;
             
-            $data['q'] = $query;
+            // $data['q'] = $query;
             $this->model->connect($this->config['DB']['host'], $this->config['DB']['user'], $this->config['DB']['password'], $this->config['DB']['name']);               
             $result    =   $this->model->query($query);
             $this->model->close();
 
-            return $this->view->set_content_JSON($data); 
+//            return $this->view->set_content_JSON($data); 
         }
 
         if(!is_array($content)){

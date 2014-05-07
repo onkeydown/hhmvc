@@ -12,12 +12,7 @@ class IndexController extends BaseController{
 
     public function action($action = "index")
     {
-
-        // print_r($_SESSION);
-        // die('InDEXCONTROLLER');
-        $action = strtolower(trim($action));
         $this->control = 'index';
-
         $_SESSION['nav'] = array($this->config['gast'], $this->config['user']);
 
         $this->session_store = $_SESSION;
@@ -37,9 +32,9 @@ class IndexController extends BaseController{
         $article =array(
           
           'splash_msg' => 'Hey, what\'s going on? <br />This is a mvc tryout from Robs...',
-          'info_msg' => 'u currently landed on hhmvc start',
+          'info_msg' => '<h3 class="infoHeadline"><i class="fa fa-wrench"></i>     HHMVC_FRMWORK_PROJECT_a000.1</h3>  <p class="infoTXT">Please try to <a href="/member/login">login</a> and through an eye on <a href="efforts">efforts</a> for more details.</p>',
           'error_msg' => 'Oh shit, there was an Error. Try again later...',
-          'headline_h2' => 'hhmvc robs'
+          'headline_h2' => 'THX in advance, &ndash;Robs'
           );
 
         return $article;

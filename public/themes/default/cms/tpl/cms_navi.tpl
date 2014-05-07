@@ -1,4 +1,5 @@
-    <ul id="crud-buttons active-link" 
+
+<ul id="crud-buttons active-link" 
         class="btnWrapper iconButtons"
         data-target="txtWrapper"
         data-id="{$articles['id']}">

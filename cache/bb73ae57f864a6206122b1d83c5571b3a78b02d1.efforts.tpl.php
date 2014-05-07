@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:652153510b79e26b95-21633234%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:200653515daae6ec98-01475674%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,13 +11,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397819887,
+      1 => 1397946424,
       2 => 'file',
     ),
     '09e46a491c65935b60719dbb38c9b7f20f259c91' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\cms\\tpl\\cms_navi.tpl',
-      1 => 1397781514,
+      1 => 1397952810,
       2 => 'file',
     ),
     '950b861992989b6a845f7fad05f8d982948f7648' => 
@@ -29,23 +29,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '159dc58c497ecaee04b7a662fd77777e382c70fe' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\script.tpl',
-      1 => 1397819748,
+      1 => 1397952533,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '652153510b79e26b95-21633234',
+  'nocache_hash' => '200653515daae6ec98-01475674',
   'cache_lifetime' => 3600,
   'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53510f6ea0f8e2_62826993',
-  'variables' => 
-  array (
-    'value' => 0,
-    'key' => 0,
-    'content' => 1,
-  ),
+  'unifunc' => 'content_5365f402317901_14526300',
   'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53510f6ea0f8e2_62826993')) {function content_53510f6ea0f8e2_62826993($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5365f402317901_14526300')) {function content_5365f402317901_14526300($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -86,7 +80,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
@@ -139,7 +133,8 @@ $_smarty_tpl->tpl_vars['articles']->_loop = true;
 ?>
                 <div class="article excerpt">
                     <?php $_smarty = $_smarty_tpl->smarty; if (!is_callable('smarty_modifier_replace')) include 'S:\\xampp\\htdocs\\hhmvc\\plugins\\Smarty\\libs\\plugins\\modifier.replace.php';
-?>    <ul id="crud-buttons active-link" 
+?>
+<ul id="crud-buttons active-link" 
         class="btnWrapper iconButtons"
         data-target="txtWrapper"
         data-id="<?php echo $_smarty_tpl->tpl_vars['articles']->value['id'];?>

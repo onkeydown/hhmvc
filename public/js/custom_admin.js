@@ -105,7 +105,6 @@ var rs = {
     },
 
     failAjax: function( data, status, xhr ){
-        
         console.log( data );
         console.log( status );
         console.log( xhr );
@@ -154,7 +153,6 @@ var rs = {
         obj = rs.mergeObj(obj2);
         obj.NumId = rs.config.PostData.Numid
         obj.url = rs.config.dbAction == "new" ? "/json/new" : "/json/save";
-        console.log('length', obj2['Html'].length, 'content', obj2['Html']);
         if(obj['Html'].length < 50) return false;
         rs.initAjax(obj);
     },

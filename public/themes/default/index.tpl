@@ -12,7 +12,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
@@ -42,17 +42,21 @@
     <div class="align-center">
         <div class="panel">
             <div class="spinner">
-                <i class="fa fa-cog xxl"></i> 
+                <i class="fa fa-cog xxl resize"></i> 
             </div>
-            <div class="slogan">
-	            <h2 class="slogan">
-	                {$content['content']['headline_h2']}
-	            </h2>
+          
+            {$content['content']['info_msg']}
+          
+            <div class="slogan wrapper">
                 <a href="/member/subscribe" class="btn btn-primary btn-lg xxl"><i class="fa fa-beer"></i> Join now</a>
                 <a href="/member/login" class="btn btn-default btn-lg xxl"><i class="fa fa-coffee"></i> Sign in</a>
+                <a href="http://github.com/onkeydown" class="btn btn-default btn-lg xxl"><i class="fa fa-code"></i> github</a>
                 <p class="subslogan">
                     {$content['content']['splash_msg']}
                 </p>
+                <h2 class="slogan">
+                    {$content['content']['headline_h2']}
+                </h2>
             </div>
         </div>
     </div>

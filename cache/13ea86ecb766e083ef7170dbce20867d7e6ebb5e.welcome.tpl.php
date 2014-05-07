@@ -1,17 +1,17 @@
-<?php /*%%SmartyHeaderCode:722853510c0c108c06-31007106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:94915351567f9cb649-20727964%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '13ea86ecb766e083ef7170dbce20867d7e6ebb5e' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\users\\welcome.tpl',
-      1 => 1397815889,
+      1 => 1397951181,
       2 => 'file',
     ),
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397819887,
+      1 => 1397946424,
       2 => 'file',
     ),
     '950b861992989b6a845f7fad05f8d982948f7648' => 
@@ -23,23 +23,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '159dc58c497ecaee04b7a662fd77777e382c70fe' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\script.tpl',
-      1 => 1397819748,
+      1 => 1397952533,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '722853510c0c108c06-31007106',
-  'variables' => 
-  array (
-    'value' => 0,
-    'key' => 0,
-    'content' => 1,
-  ),
-  'has_nocache_code' => true,
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53510c0c391395_12081491',
+  'nocache_hash' => '94915351567f9cb649-20727964',
   'cache_lifetime' => 3600,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5365f3fec0fad8_70164868',
+  'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53510c0c391395_12081491')) {function content_53510c0c391395_12081491($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5365f3fec0fad8_70164868')) {function content_5365f3fec0fad8_70164868($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -80,7 +74,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">
@@ -104,8 +98,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="row">
 <div class="col-md-6 col-md-offset-3">
 <div class="align-center">
-    <h2><?php echo $_smarty_tpl->tpl_vars['content']->value['content']['headline_h2'];?>
-</h2>
+    <h5><?php echo $_smarty_tpl->tpl_vars['content']->value['content']['headline_h2'];?>
+</h5>
 </div>
 </div>
 </div>
@@ -120,25 +114,28 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="col-md-6 col-md-offset-3 panel">
 <div class="align-center">
     <h2>
-    <i class="fa fa-quote-left"></i> <?php echo $_smarty_tpl->tpl_vars['content']->value['content']['info_msg'];?>
+    	<?php echo $_smarty_tpl->tpl_vars['content']->value['content']['welcome_msg'];?>
 
     </h2>
-    <div class="avatar img-circle"><i class="fa fa-user"></i></div>
-    <p>
-    	You are logged in |
-		user: sadmin (role: 2)<br/>
-		last visit: 2014-04-06 16:57:22 |
-		e-mail: sadmin@ewrwer.de - 
-		
-		<a href="/user/profile">edit Profile</a>
+    <h5>
+       <span class="userName">
+       		<i class="fa fa-desktop">&nbsp;</i><?php echo $_smarty_tpl->tpl_vars['content']->value['content']['user_name'];?>
 
+       		<em>logged in as: <span>editor</span> / e-mail: <span>sadmin@ewrwer.de</span> &ndash;</em>
+       </span>
+     <!--    <a href="/user/profile" class="btn btn-primary"><i class="fa fa-edit" style="font-size:14px"></i> Profile</a> -->
+    </h5>
+    <div class="avatar img-circle" data-toggle="tooltip" data-placement="top" title="click to upload Avator or drop avatar here"><i class="fa fa-user"></i></div>
+    <p>
+       <time class="timeTag" itemprop="dateCreated" datetime="2014-04-06 16:57:22"> last login: 2014-04-06 16:57:22</time>
 	</p>
-    <div class="subslogan">
-        <h5><?php echo $_smarty_tpl->tpl_vars['content']->value['content']['splash_msg'];?>
-</h5>
-	    <a href="#" class="btn btn-primary hhmvc-Button">
-	  		<i class="fa fa-thumbs-up"></i> Submit
+    <div class="subslogan btn-group">
+        <h6><?php echo $_smarty_tpl->tpl_vars['content']->value['content']['splash_msg'];?>
+</h6>
+	    <a href="#" class="btn btn-default hhmvc-Button">
+	  		<i class="fa fa-thumbs-up"></i> Add Content
 	    </a>
+	    <a href="/user/profile" class="btn btn-default hhmvc-Button"><i class="fa fa-edit" style="font-size:14px"></i> Adjust Profile</a>
     </div>
 </div>
 </div>

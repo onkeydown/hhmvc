@@ -13,24 +13,26 @@ class CmsController extends BaseController{
 
     public function action($action = "index", $parameter = false)
     {
+        // move out to method
         $this->tools->isProtected();
-        $action = strtolower(trim($action));
         $this->control = 'cms';
         $this->session_store = $_SESSION;
-
+        // move out to method
         $post = ($_POST) ? $this->tools->filterArray($_POST, FILTER_SANITIZE_STRING) : FALSE;
 
         if($action == "efforts"){
     
             $query = 'select * from hhmvc.cms where hhmvc.cms.id > "0" AND hhmvc.cms.status < "3" order by id desc ';
+            // move out to method move to model method
             $this->model->connect($this->config['DB']['host'], $this->config['DB']['user'], $this->config['DB']['password'], $this->config['DB']['name']);
-          
+            // move out to model method
             $result  = $this->model->query($query);
-	
+            // move out to model method
 	        while($content[] =  $this->tools->htmlEncodeDecode($this->model->fetch_array($result, MYSQL_ASSOC), 'dec'));                     
 			
 			return $this->view->set_content($content, $this->control.'/'.$action.'.tpl');
-			$this->tools->setSession(array('action' => $action));
+            $this->tools->setSession(array('action' => $action));
+
 			exit;
         }
 

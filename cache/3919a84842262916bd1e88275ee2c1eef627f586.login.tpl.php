@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:609953510b8fde16a4-92128888%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3090453515def29ef89-43153145%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '55c271a55139c18ce353a434356ac2bbdb1dd57f' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\index.tpl',
-      1 => 1397819887,
+      1 => 1397946424,
       2 => 'file',
     ),
     '950b861992989b6a845f7fad05f8d982948f7648' => 
@@ -23,17 +23,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '159dc58c497ecaee04b7a662fd77777e382c70fe' => 
     array (
       0 => 'S:\\xampp\\htdocs\\hhmvc\\public\\themes\\default\\basic\\script.tpl',
-      1 => 1397819748,
+      1 => 1397952533,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '609953510b8fde16a4-92128888',
-  'version' => 'Smarty-3.1.17',
-  'unifunc' => 'content_53511bafc95ca1_76349981',
-  'has_nocache_code' => true,
+  'nocache_hash' => '3090453515def29ef89-43153145',
   'cache_lifetime' => 3600,
+  'version' => 'Smarty-3.1.17',
+  'unifunc' => 'content_5365f3f3e284f6_79538566',
+  'has_nocache_code' => true,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_53511bafc95ca1_76349981')) {function content_53511bafc95ca1_76349981($_smarty_tpl) {?><!doctype html>
+<?php if ($_valid && !is_callable('content_5365f3f3e284f6_79538566')) {function content_5365f3f3e284f6_79538566($_smarty_tpl) {?><!doctype html>
 <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -68,7 +68,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="fa fa-bars color-white"></span>
             </button>
-            <h1><a class="navbar-brand" href="/" data-0="line-height:90px;" data-300="line-height:50px;">HH-MVC Robs</a></h1>
+            <h1><a class="navbar-brand rotate45" href="/" data-0="line-height:90px;" data-300="line-height:50px;"><i class="fa fa-wrench"></i></a></h1>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav nav-pills" data-0="margin-top:20px;" data-300="margin-top:5px;">

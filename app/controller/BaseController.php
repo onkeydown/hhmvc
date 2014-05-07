@@ -23,12 +23,12 @@ Abstract Class BaseController {
 	  $_SESSION['nav']['1'] = $this->config['user'];
 	  $_SESSION['crud'] = $this->config['crud'];
 
-	  self::request($_SERVER['REQUEST_URI']);
+	  // self::request($_SERVER['REQUEST_URI']);
 	}
 
 	abstract function action();
 
-	public function request($string){
-		$_SESSION['req'] =  substr(strrchr($string, "/"), 1);;
-	}
+	// public function request($string){
+	// 	$_SESSION['req'] =  substr(strrchr($string, "/"), 1);;
+	// }
 }
