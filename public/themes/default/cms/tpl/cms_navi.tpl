@@ -1,4 +1,5 @@
-    <ul id="crud-buttons active-link" 
+    {$session['crud']|print_r}
+    <ul id="crud-buttons active-link"
         class="btnWrapper iconButtons"
         data-target="txtWrapper"
         data-id="{$articles['id']}">

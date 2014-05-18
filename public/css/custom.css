@@ -1653,15 +1653,27 @@ color:rgb(25, 181, 254);
 .iconButtons{
 
   width: 5%;
+  
+
   float: left;
-  /* position: absolute; */
-  /* left: -100px; */
+  
+
+  position: relative;
+  
+
+  left: -150px;
+  
+
   /* top:20px; */
   
 
   margin: 5px 0 0 0;
 
   padding: 0;
+
+  border: 1px solid black;
+
+  height: 234px;
 
 }
 

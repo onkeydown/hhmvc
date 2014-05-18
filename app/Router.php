@@ -3,16 +3,15 @@
 class Router{
 
 	public $controller;
-
-	public $action;
-		
+	public $action;	
 	public $params = array();
-
-	public $uri;
-
-	private $reroute;
-
+    public $uri;
+    private $reroute;
 	
+    #protected $config = array();
+	#protected $user = array();
+	#protected $contentType = array();
+
 	function __construct() {
 	    $this->getController();
 	}
