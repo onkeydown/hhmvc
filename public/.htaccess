@@ -2,14 +2,14 @@
 
 RewriteEngine On
 
-RewriteCond $1 !\.(gif|jpg|png|ico|css|js|swf|wav|mp3|less|cur) [OR]
+	RewriteCond $1 !\.(gif|jpg|png|ico|css|js|swf|wav|mp3|less|cur) [OR]
 
-RewriteCond %{REQUEST_URI} ^/public/.*\.css$
+	RewriteCond %{REQUEST_URI} ^/public/.*\.css$
 
-RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-f
 
-RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-d
 
- RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+	RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
 
 </IfModule>

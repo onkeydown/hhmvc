@@ -1,31 +1,29 @@
 <?php
 
-class Router {
+class Router{
 
 	public $controller;
 
-	public $action; 
+	public $action;
+		
+	public $params = array();
+
+	public $uri;
+
+	private $reroute;
+
 	
-	public $httpPost = array();
-	
-	private $args = array();
-
-	protected $config = array();
-
-	protected $user = array();
-
-	protected $contentType = array();
-
 	function __construct() {
-
-	    $this->getController();
-	    $this->getHttpHeader();
-
+	    self::getController();
 	}
 
 	private function getController() {
 
-		$route = (empty($_GET['url'])) ? '' : strtolower($_GET['url']);
+		$this->reroute = array("efforts"	=> "show/efforts",
+								"blog" 		=> "show/blog",
+								"cv" 		=> "show/cv");
+
+		$route = isset($this->reroute[strtolower($_GET['url'])]) ? $this->reroute[strtolower($_GET['url'])] : strtolower($_GET['url']);
 
 		if (empty($route))
 		{
@@ -33,31 +31,40 @@ class Router {
 		}
 		else
 		{
-
-			$parts = explode('/', $route);
+		
+			$parts = explode('/', $this->charFilter($route));
 			$this->controller = ucfirst($parts[0]).'Controller';
-			if(isset( $parts[1]))
+		
+			if(isset($parts[1]))
 			{
-				$this->action = ucfirst($parts[1]);
+				$this->action = strtolower(trim($parts[1]));
 			}
 		}
 
-		if (empty($this->controller))
+		if(empty($this->controller))
 		{
 			$this->controller = 'Index'.'Controller';
 		}
 
-		if (empty($this->action))
+		if(empty($this->action))
 		{
-			$this->action = 'Index';
+			$this->action = 'index';
 		}
+
+		if(isset($parts[2]))
+		{
+			unset( $parts[0], $parts[1] );
+			$this->params = array_values($parts);
+		}
+		unset($parts);
 	}
 
-	public function getHttpHeader(){
-		$httpAccept = explode(',' , $_SERVER['HTTP_ACCEPT']);
-		$this->contentType = $httpAccept;
-	}
+	public function charFilter($str, $opt = null)
+	{
 	
+		$regEx = isset($opt) ? $opt : '/[^a-zA-Z0-9\/\_.]/i';		
+		return $string = preg_replace($regEx, '', $str);
+	}
 }
 
 ?>

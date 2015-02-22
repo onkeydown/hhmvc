@@ -1,12 +1,6 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-{include file="../basic/head.tpl"}
-</head>  
-	<body> 
+{extends file="../index.tpl"}
 
-		{$content|print_r}
-
+	{block name="content_001"}
 		<form action="/member/reminder" method="POST" class="pure-form">
 		    <fieldset>
 		        <legend>A compact inline form</legend>
@@ -19,11 +13,10 @@
 		        </label>
 
 		        <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+		        <a href="/member/login">Login here!</a>
 		    </fieldset>
 		</form>
-
-		<a href="/member/login">Login here!</a>
-
-	{include file="../basic/FOOTER.tpl"}
-	</body>
-</html>
+	{/block}
+	
+	{block name="content_002"}{/block}
+	{block name="content_003"}{/block}

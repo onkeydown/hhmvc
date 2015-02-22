@@ -1,0 +1,494 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"reg",
+				"Registry"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"dire",
+				"dirname"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"pars",
+				"parse_ini_file"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"PA",
+				"Package Control: Remove Package"
+			],
+			[
+				"PAC",
+				"Package Control: Remove Package"
+			],
+			[
+				"pACKA",
+				"Package Control: Remove Package"
+			],
+			[
+				"PHP Code Sniffer: ",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sy",
+				"Set Syntax: PHP"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/S/xampp/htdocs/hhmvc/public/index.php",
+		"/S/xampp/htdocs/hhmvc/app/Router.php",
+		"/S/xampp/htdocs/hhmvc/app/Loader.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/IndexController.php",
+		"/S/xampp/htdocs/hhmvc/app/Record.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/BaseController.php",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/member/subscribe.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/index.tpl",
+		"/S/xampp/htdocs/hhmvc/app/controller/MemberController.php",
+		"/S/xampp/htdocs/hhmvc/app/view/View.php",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/basic/script.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/basic/footer.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/basic/head.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/member/reminder.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/member/index.tpl",
+		"/S/xampp/htdocs/hhmvc/cache/templates_c/159dc58c497ecaee04b7a662fd77777e382c70fe.file.script.tpl.cache.php",
+		"/S/xampp/htdocs/hhmvc/cache/55c271a55139c18ce353a434356ac2bbdb1dd57f.index.tpl.php",
+		"/S/xampp/htdocs/hhmvc/cache/templates_c/f1e85c1d87af5fbc8ad9cc925afbb03bb708a14a.file.subscribe.tpl.cache.php",
+		"/S/xampp/htdocs/hhmvc/cache/f1e85c1d87af5fbc8ad9cc925afbb03bb708a14a.subscribe.tpl.php",
+		"/S/xampp/htdocs/hhmvc/cache/templates_c/55c271a55139c18ce353a434356ac2bbdb1dd57f.file.index.tpl.cache.php",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/PhpCodeGen/phpcodegen.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/User/phpcodegen.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/User/phpcs.sublime-settings",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/Phpcs/phpcs.sublime-settings",
+		"/S/xampp/htdocs/hhmvc/cache/3919a84842262916bd1e88275ee2c1eef627f586.login.tpl.php",
+		"/S/xampp/htdocs/hhmvc/cache/templates_c/1ecfef40a8e861cb85f42f1fb3289e9ea75c13b3.file.debug.tpl.php",
+		"/S/xampp/htdocs/hhmvc/plugins/Smarty/libs/Smarty.php",
+		"/S/xampp/htdocs/hhmvc/app/Config.php",
+		"/S/xampp/htdocs/hhmvc/app/HeaderRequest.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/AboutController.php",
+		"/S/xampp/htdocs/hhmvc/app/model/BaseModel.php",
+		"/S/xampp/htdocs/hhmvc/app/view/BaseView.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/LatestController.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/MostviewedController.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/PlayController.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/TopratedController.php",
+		"/S/xampp/htdocs/backup_files_trash/views/index.php",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/about.tpl",
+		"/S/xampp/htdocs/hhmvc/public/themes/default/main.tpl",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/PhpNamespace/Base File.sublime-settings",
+		"/S/xampp/htdocs/backup_files_trash/includes/init.php",
+		"/S/xampp/htdocs/hhmvc/plugins/Smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php",
+		"/S/xampp/htdocs/hhmvc/app/model/IndexModel.php",
+		"/S/xampp/htdocs/hhmvc/plugins/Smarty/libs/debug.tpl",
+		"/S/xampp/htdocs/hhmvc/configs/config.ini",
+		"/S/xampp/htdocs/hhmvc/app/controller/Controller.php",
+		"/S/xampp/htdocs/hhmvc/app/classRecord.php",
+		"/S/xampp/htdocs/hhmvc/public/.htaccess",
+		"/S/xampp/htdocs/hhmvc/app/classLoader.php",
+		"/S/xampp/htdocs/hhmvc/creator.php",
+		"/S/xampp/htdocs/creator.php",
+		"/S/xampp/htdocs/hhmvc/application/template.class.php",
+		"/S/xampp/php/php.ini",
+		"/S/xampp/php/php_bak.ini",
+		"/S/xampp/htdocs/backup_files_trash/.htaccess",
+		"/S/xampp/htdocs/hhmvc/.htaccess",
+		"/S/xampp/htdocs/hhmvc/views/index.php",
+		"/S/xampp/htdocs/hhmvc/application/controller_base.class.php",
+		"/S/xampp/htdocs/hhmvc/application/router.class.php",
+		"/S/xampp/htdocs/hhmvc/views/themes/default/tpl/index.php",
+		"/S/xampp/htdocs/hhmvc/views/themes/default/tpl/blog_view.php",
+		"/S/xampp/htdocs/hhmvc/controller/indexController.php",
+		"/S/xampp/htdocs/hhmvc/controller/error404.php",
+		"/S/xampp/htdocs/hhmvc/application/record.class.php",
+		"/S/xampp/htdocs/hhmvc/includes/app_values.php",
+		"/S/xampp/htdocs/hhmvc/views/.htaccess",
+		"/S/xampp/htdocs/hhmvc/includes/init.php",
+		"/S/xampp/htdocs/hhmvc/application/template.class.php.bak",
+		"/S/xampp/htdocs/hhmvc/controller/blogController.php",
+		"/S/xampp/htdocs/hhmvc/app/controller_base.class.php",
+		"/S/xampp/htdocs/hhmvc/app/controller/indexController.class.php",
+		"/S/xampp/htdocs/hhmvc/app/router.class.php",
+		"/S/xampp/htdocs/hhmvc/inc/init.php",
+		"/S/xampp/htdocs/hhmvc/app/registry.class.php",
+		"/S/xampp/htdocs/hhmvc/app/model/db.class.php",
+		"/S/xampp/htdocs/hhmvc/inc/config.inc.php",
+		"/S/xampp/htdocs/hhmvc/xxx_backup/mvc/includes/init.php",
+		"/S/xampp/htdocs/hhmvc/xxx_backup/mvc/index.php",
+		"/S/xampp/htdocs/hhmvc/application/registry.php",
+		"/S/xampp/htdocs/hhmvc/application/loader.php",
+		"/S/xampp/htdocs/hhmvc/application/index.class.php",
+		"/S/xampp/htdocs/hhmvc/application/model/db.class.php",
+		"/S/xampp/htdocs/hhmvc/application/basemodel.class.php",
+		"/S/xampp/htdocs/hhmvc/application/controller/indexController.php",
+		"/S/xampp/htdocs/hhmvc/application/controller/error404.php",
+		"/S/xampp/htdocs/hhmvc/application/controller/blogController.php",
+		"/S/xampp/htdocs/hhmvc/application/view.class.php",
+		"/S/xampp/htdocs/hhmvc/application/basecontroller.class.php",
+		"/S/xampp/htdocs/hhmvc/application/registry.class.php",
+		"/S/xampp/php/php.ini-development",
+		"/S/xampp/htdocs/hhmvc/libs/smarty/libs/plugins/modifiercompiler.indent.php",
+		"/S/xampp/htdocs/hhmvc/libs/smarty/demo/index.php",
+		"/S/xampp/htdocs/hhmvc/libs/adodb5/adodb-active-record.inc.php",
+		"/S/xampp/htdocs/hhmvc/libs/smarty/libs/sysplugins/smarty_internal_compile_insert.php",
+		"/S/xampp/htdocs/hhmvc/libs/smarty/README",
+		"/S/xampp/htdocs/hhmvc/mvc/includes/init.php",
+		"/S/xampp/htdocs/hhmvc/mvc/index.php",
+		"/S/xampp/htdocs/backup_files_trash/bootstrap_mvc/mvc/index.php",
+		"/S/xampp/htdocs/hhmvc/application/views/Error/badtemplate.class.php",
+		"/S/xampp/htdocs/hhmvc/application/views/Error/badview.class.php",
+		"/S/xampp/htdocs/hhmvc/application/views/Error/badurl.class.php",
+		"/S/xampp/htdocs/hhmvc/application/controllers/index.class.php",
+		"/S/xampp/htdocs/hhmvc/application/controllers/error.class.php",
+		"/C/Users/robs/AppData/Roaming/Sublime Text 3/Packages/PhpNamespace/Default (Windows).sublime-keymap",
+		"/S/xampp/htdocs/hhmvc/application/controller.class.php",
+		"/S/xampp/htdocs/hhmvc/application/loader.class.php",
+		"/S/xampp/htdocs/hhmvc/application/viewmodel.class.php",
+		"/S/xampp/htdocs/hhmvc/application/index.php",
+		"/S/xampp/htdocs/hhmvc/config/init.php",
+		"/S/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/S/xampp/htdocs/fp/themes/index.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"S:\\xampp\\htdocs\\hhmvc"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"small",
+			"%%*/",
+			"href=\"css",
+			"<label ",
+			" <input",
+			"email",
+			"password",
+			"Password",
+			"password",
+			"color",
+			"tab-s",
+			"mark",
+			"protected",
+			"function",
+			"/",
+			"password_check",
+			"debug",
+			"$this->acti",
+			"$this->con",
+			"autoload",
+			"smarty",
+			"smartyy",
+			"samrty",
+			"ROOT_DIR",
+			"dirname(dirname(__FILE__))",
+			"',",
+			"define( '",
+			"$_GET",
+			"GET",
+			" $root",
+			"=",
+			"app_",
+			"rec",
+			"Rec",
+			"rec",
+			"fallba",
+			"require",
+			"php",
+			"*",
+			"require",
+			"curl",
+			"web",
+			"application",
+			"yourObject",
+			"router",
+			"registry",
+			"$_GET",
+			"',",
+			";",
+			"] =",
+			"$config['",
+			"__SITE_PATH",
+			"registry",
+			"Template not found",
+			"setPath",
+			". '",
+			"';",
+			"'../../application/'",
+			"__SITE_PATH . '",
+			"spl_autoload",
+			"	self::$instance",
+			"$rows",
+			"spl_autoload",
+			"'/",
+			"application",
+			"public function index() \n{\n        $this->registry->template->blog_heading = 'This is the blog Index';\n        $this->registry->template->show('blog_index');\n}\n\n\npublic function view(){\n\n	/*** should not have to call this here.... FIX ME ***/\n\n	$this->registry->template->blog_heading = 'This is the blog heading';\n	$this->registry->template->blog_content = 'This is the blog content';\n	$this->registry->template->show('blog_view');\n}",
+			"_once",
+			"loader",
+			"public",
+			"*/\n",
+			"SITE_PATH",
+			"modul",
+			".php",
+			"DS . ",
+			"_once",
+			"; )",
+			" (",
+			"= (",
+			"\";",
+			"\" .",
+			"include ",
+			"cress",
+			"classes/",
+			"require(\"",
+			"ROOT",
+			"ROOT . DS . \"application\"",
+			"include",
+			");",
+			"require(",
+			"include __SITE_PATH . '/",
+			");",
+			"require(",
+			"badUrl",
+			"home.",
+			"ROOT . DS . ",
+			"\"",
+			";",
+			"=",
+			"=>",
+			"' ]",
+			"$appCon[ 'dir' ] [ ",
+			";",
+			" ]",
+			"$appCon[ 'app' ] ",
+			"] [",
+			"=",
+			"defi",
+			"DS",
+			"T DS",
+			"/",
+			"\"/",
+			");",
+			"',",
+			" define('",
+			",",
+			" define('",
+			"PT",
+			"indention",
+			"\"bold_folder_labels\": true",
+			"bold",
+			"style",
+			"font"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"record"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "hhmvc.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"S:\\_02_Software\\Sublime Text 3\\projects\\fp.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
